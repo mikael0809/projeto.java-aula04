@@ -11,8 +11,10 @@ package com.mikael.aula04;
 public class Aula04 {
 
     public static void main(String[] args) {
-        int a = 4;
-        int b = 6;
-        int soma = a+b;
+        JFTela app = new JFTela();
+        app.setTitle("GITBUB");
+        app.setLocationRelativeTo(app);
+        app.setVisible(true);
+        
     }
 }
