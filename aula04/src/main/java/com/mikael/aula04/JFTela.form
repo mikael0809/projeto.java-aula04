@@ -41,6 +41,8 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="btnContar" max="32767" attributes="0"/>
                           <Component id="btnCalcular" max="32767" attributes="0"/>
+                          <Component id="btnif" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnLoop" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="lbTotal" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -69,14 +71,20 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtJuros" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtJuros" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnif" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtAtraso" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtAtraso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLoop" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="lbTotal" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="38" max="32767" attributes="0"/>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -137,6 +145,22 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Total a Pagar R$ 0,00"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnif">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="If...else"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnifActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLoop">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Loop"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoopActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
